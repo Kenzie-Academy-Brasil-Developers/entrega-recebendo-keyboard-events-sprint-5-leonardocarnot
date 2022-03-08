@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let boxTop = 200;
+        let boxLeft = 200;
+        document.addEventListener('keydown', (event) => {
+            const keyName = event.key;
+            console.log('keydown event\n\n' + 'key: ' + keyName);
+            if (keyName === "ArrowUp") {
+                boxTop -= 10
+                box.style.top = boxTop + "px";
+            }
+            else if (keyName === "ArrowDown") {
+                boxTop += 10
+                box.style.top = boxTop + "px";
+            }
+            else if (keyName === "ArrowLeft") {
+                boxLeft -= 10
+                box.style.left = boxLeft + "px";
+            }
+            else if (keyName === "ArrowRight") {
+                boxLeft += 10
+                box.style.left = boxLeft + "px";
+            };
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="box"><img src="https://lh3.googleusercontent.com/pw/AM-JKLXEAK-WlftXTpAvk5VDXufqR93IPLXBBBRRv-jY1R4Y7iUW0-Q8IySdndlwcgSPDbs-6IpIdUhNK0zxSBQCXzIOPzzHICmuvx5kZR0E8nE7A9Zsv3Fa6ieoJa9yPh9vfgvTYY_zGmE_11EYlXPdFEhymg=w514-h627-no?authuser=0" alt=""></div>
+</body>
+
+</html>
